@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { ShimmerBtn } from "@/components/ui/ShimmerButton";
 import Link from "next/link";
+import { IoIosSend } from "react-icons/io";
 
 export function GridAndDotBG() {
   return (
@@ -27,8 +28,13 @@ export function GridAndDotBG() {
       duration={2.5}  
       filter={true}/>
       <p className="relative z-20 mt-5 text-center text-white tracking-wider md:tracking-widest mb-4 text-sm md:text-lg lg:text-2xl px-4">
-      Hi, I&apos;m Md Ismail, a Next.js Developer based in Myanmar.</p>
-      <Link href="/about" className='relative z-20 block mx-auto text-center mt-5'><ShimmerBtn /></Link>
+      Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 animate-gradient">Mohammed Ismail</span>, a Next.js Developer based in Myanmar.</p>
+      <Link href="/about" className='relative z-20 block mx-auto text-center mt-5'>
+      <ShimmerBtn 
+      title="Show my work"
+      icon={<IoIosSend/>}
+      position="right"/>
+      </Link>
       </div>
     </div>
   );
