@@ -104,12 +104,12 @@ export const BentoGridItem = ({
       
       {id === 6 && (
       <div className="mt-5 relative">
-      <div className={`absolute left-[60px] -top-8`}>
+      <div className={`absolute left-[40px] md:[50px] -top-24`}>
       <Lottie
         animationData={animationData}
         loop={copied}
         autoplay={copied}
-        style={{ width: 80, height: 80 }}
+        style={{ width: 200, height: 200 }}
       />
       </div>
       <ShimmerBtn title={copied ? "Email copied" : "Copy my email"}
