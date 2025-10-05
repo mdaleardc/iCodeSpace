@@ -1,5 +1,6 @@
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "iCode Space",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>
             {children}
+            <Footer />
           </ThemeProvider>
       </body>
     </html>
